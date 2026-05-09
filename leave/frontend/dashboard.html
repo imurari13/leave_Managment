@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="profile">
+
+            <div>
+
+                <h2 id="username"></h2>
+
+                <p id="department"></p>
+
+            </div>
+
+            <div class="online"></div>
+
+        </div>
+
+        <div class="leave-balance">
+
+            <h3>Remaining Leaves</h3>
+
+            <h1>14</h1>
+
+        </div>
+
+        <h2 style="margin-top:25px;">
+
+            Apply Leave
+
+        </h2>
+
+        <select id="leaveType">
+
+            <option>Sick Leave</option>
+
+            <option>Casual Leave</option>
+
+            <option>Emergency Leave</option>
+
+        </select>
+
+        <input type="date" id="startDate">
+
+        <input type="date" id="endDate">
+
+        <textarea
+            id="reason"
+            placeholder="Reason"
+        ></textarea>
+
+        <button onclick="applyLeave()">
+
+            Apply Leave
+
+        </button>
+
+        <h2 style="margin-top:30px;">
+
+            Leave History
+
+        </h2>
+
+        <div id="leaveContainer"></div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
